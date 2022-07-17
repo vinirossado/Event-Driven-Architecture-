@@ -15,9 +15,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddTransient(typeof(IRepository<>), typeof(GenericRepository<>));
+//builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 builder.Services.AddAutoMapper(typeof(InvoiceController));
-builder.Services.AddTransient<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 builder.Services.AddMediatR(typeof(GetAllInvoiceQuery).Assembly);
 builder.Services.AddDbContext<InvoiceDbContext>(o => o.UseNpgsql("Host=localhost;Port=5432;Pooling=true;Database=ECommerce;User Id=postgres;Password=postgres;"));
 

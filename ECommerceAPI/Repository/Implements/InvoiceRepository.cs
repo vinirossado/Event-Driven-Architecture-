@@ -10,6 +10,6 @@ namespace Repository.Implements
         public InvoiceRepository(InvoiceDbContext invoiceDbContext) : base(invoiceDbContext)
         {
         }
-
+    
     }
 }

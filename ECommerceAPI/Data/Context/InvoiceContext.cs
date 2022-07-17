@@ -1,16 +1,16 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Data.Context
 {
     public partial class InvoiceDbContext : DbContext
     {
-        public InvoiceDbContext()
+        protected readonly IConfiguration _configuration;
+
+        public InvoiceDbContext(IConfiguration configuration, DbContextOptions<InvoiceDbContext> options) : base(options)
         {
-        }
-        public InvoiceDbContext(DbContextOptions<InvoiceDbContext> options) : base(options)
-        {
-            Database.EnsureCreated();
+            _configuration = configuration;
         }
         public virtual DbSet<Invoice> Invoice { get; set; } = null;
 
@@ -18,7 +18,7 @@ namespace Data.Context
         {
             modelBuilder.Entity<Invoice>().ToTable("Invoice");
 
-            OnModelCreating(modelBuilder);
+            OnModelCreatingPartial(modelBuilder);
         }
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 

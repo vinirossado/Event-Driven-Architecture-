@@ -22,10 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
-    <ProjectReference Include="..\Repository\Repository.csproj" />
-    <ProjectReference Include="..\Service\Service.csproj" />
+    <ProjectReference Include="..\Data\ECommerce.Data.csproj" />
+    <ProjectReference Include="..\Domain\ECommerce.Domain.csproj" />
+    <ProjectReference Include="..\Repository\ECommerce.Repository.csproj" />
+    <ProjectReference Include="..\Service\ECommerce.Service.csproj" />
   </ItemGroup>
 
 </Project>

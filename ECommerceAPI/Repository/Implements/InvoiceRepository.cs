@@ -1,11 +1,11 @@
-﻿using Data.Context;
-using Domain.Models;
-using Repository.Base;
-using Repository.Interface;
+﻿using ECommerce.Data.Context;
+using ECommerce.Domain.Models;
+using ECommerce.Repository.Base;
+using ECommerce.Repository.Interfaces;
 
-namespace Repository.Implements
+namespace ECommerce.Repository.Implements
 {
-    public class InvoiceRepository : GenericRepository<Invoice>, IInvoiceRepository
+    public class InvoiceRepository : GenericRepository<InvoiceModel>, IInvoiceRepository
     {
         public InvoiceRepository(InvoiceDbContext invoiceDbContext) : base(invoiceDbContext)
         {

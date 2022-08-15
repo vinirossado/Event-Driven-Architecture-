@@ -1,14 +1,14 @@
-﻿using Domain.Models;
-using Repository.Interface;
+﻿using ECommerce.Domain.Models;
+using ECommerce.Repository.Interfaces;
 
-namespace Service.Command
+namespace ECommerce.Service.Command.Invoice
 {
     public class DeleteInvoiceCommandHandler
     {
         private readonly IInvoiceRepository _customerRepository;
         public DeleteInvoiceCommandHandler(IInvoiceRepository customerRepository) => _customerRepository = customerRepository;
 
-        public async Task<Invoice> Handle(DeleteInvoiceCommand request, CancellationToken cancellationToken)
+        public async Task<InvoiceModel> Handle(DeleteInvoiceCommand request, CancellationToken cancellationToken)
         {
             return await _customerRepository.DeleteAsync(request.Invoice);
         }

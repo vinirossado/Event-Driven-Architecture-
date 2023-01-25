@@ -1,8 +1,8 @@
-﻿using Domain.Interface;
+﻿using ECommerce.Domain.Interface;
 
-namespace Domain.Models
+namespace ECommerce.Domain.Models
 {
-    public class Invoice : IEntity
+    public class InvoiceModel : IEntity
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }

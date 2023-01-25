@@ -1,4 +1,4 @@
-﻿namespace Repository.Interface
+﻿namespace ECommerce.Repository.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : class, new()
     {

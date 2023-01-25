@@ -1,8 +1,8 @@
-﻿using Data.Context;
-using Domain.Interface;
-using Repository.Interface;
+﻿using ECommerce.Data.Context;
+using ECommerce.Domain.Interface;
+using ECommerce.Repository.Interfaces;
 
-namespace Repository.Base
+namespace ECommerce.Repository.Base
 {
     public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity, new()
     {

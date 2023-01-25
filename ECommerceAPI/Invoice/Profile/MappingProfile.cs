@@ -7,13 +7,13 @@
     {
         public MappingProfile()
         {
-            CreateMap<CreateInvoiceRequestDto, Domain.Models.Invoice>();
-            CreateMap<Domain.Models.Invoice, CreateInvoiceResponseDto>();
+            CreateMap<CreateInvoiceRequestDto, ECommerce.Domain.Models.InvoiceModel>();
+            CreateMap<ECommerce.Domain.Models.InvoiceModel, CreateInvoiceResponseDto>();
 
-            CreateMap<DeleteInvoiceRequestDto, Domain.Models.Invoice>();
-            CreateMap<Domain.Models.Invoice, DeleteInvoiceResponseDto>();
+            CreateMap<DeleteInvoiceRequestDto, ECommerce.Domain.Models.InvoiceModel>();
+            CreateMap<ECommerce.Domain.Models.InvoiceModel, DeleteInvoiceResponseDto>();
 
-            CreateMap<Domain.Models.Invoice, FindInvoiceResponseDto>();
+            CreateMap<ECommerce.Domain.Models.InvoiceModel, FindInvoiceResponseDto>();
         }
     }
 }

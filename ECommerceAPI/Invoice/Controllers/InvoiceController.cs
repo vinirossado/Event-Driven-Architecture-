@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
+using ECommerce.Domain.Models;
+using ECommerce.Service.Command.Invoice;
+using ECommerce.Service.Query.Invoice;
 using Invoice.Controllers.Dto;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Service.Command;
-using Service.Query;
 
 namespace Invoice.Controllers
 {
@@ -44,7 +45,7 @@ namespace Invoice.Controllers
         {
             try
             {
-                var invoice = _mapper.Map<Domain.Models.Invoice>(createInvoiceModel);
+                var invoice = _mapper.Map<InvoiceModel>(createInvoiceModel);
                 var response = await _mediator.Send(new CreateInvoiceCommand
                 {
                     Invoice = invoice
@@ -66,7 +67,7 @@ namespace Invoice.Controllers
         {
             try
             {
-                var invoice = _mapper.Map<Domain.Models.Invoice>(deleteCustomerRequest);
+                var invoice = _mapper.Map<ECommerce.Domain.Models.InvoiceModel>(deleteCustomerRequest);
                 var response = await _mediator.Send(new DeleteInvoiceCommand
                 {
                     Invoice = invoice

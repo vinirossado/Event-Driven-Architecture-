@@ -1,11 +1,10 @@
-using Data.Context;
+using ECommerce.Data.Context;
+using ECommerce.Repository.Implements;
+using ECommerce.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Repository.Base;
-using Repository.Implements;
-using Repository.Interface;
-using Service.Query;
 using MediatR;
 using Invoice.Controllers;
+using ECommerce.Service.Query.Invoice;
 
 var builder = WebApplication.CreateBuilder(args);
 

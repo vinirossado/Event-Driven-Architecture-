@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using ECommerce.Domain.Models;
 
-namespace Repository.Interface
+namespace ECommerce.Repository.Interfaces
 {
-    public interface IInvoiceRepository : IRepository<Invoice>
+    public interface IInvoiceRepository : IRepository<InvoiceModel>
     {
     }
 }

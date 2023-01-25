@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Buy": {
+    "Invoice": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -27,7 +27,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Docker": {
+    "DockerInvoice": {
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",

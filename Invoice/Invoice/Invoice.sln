@@ -1,14 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CC30F221-9238-4BF7-8306-CE5FB236FF63}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-API", "1-API", "{CC30F221-9238-4BF7-8306-CE5FB236FF63}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{9A13FFCB-9F0B-4065-8A77-DF46F2A383B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Service", "2-Service", "{9A13FFCB-9F0B-4065-8A77-DF46F2A383B5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{3454484A-1918-4694-ADE7-C5BFECF85656}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Repository", "3-Repository", "{3454484A-1918-4694-ADE7-C5BFECF85656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.API", "Invoice.API\Invoice.API.csproj", "{CEA3F59C-DD4F-452D-ABBA-042399081EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.Service", "Invoice.Service\Invoice.Service.csproj", "{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.Repository", "Invoice.Repository\Invoice.Repository.csproj", "{ECA155D6-E058-4A10-A931-B05451ABD91F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEA3F59C-DD4F-452D-ABBA-042399081EDB} = {CC30F221-9238-4BF7-8306-CE5FB236FF63}
+		{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC} = {9A13FFCB-9F0B-4065-8A77-DF46F2A383B5}
+		{ECA155D6-E058-4A10-A931-B05451ABD91F} = {3454484A-1918-4694-ADE7-C5BFECF85656}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA3F59C-DD4F-452D-ABBA-042399081EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA3F59C-DD4F-452D-ABBA-042399081EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA3F59C-DD4F-452D-ABBA-042399081EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA3F59C-DD4F-452D-ABBA-042399081EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CCB1B6-F6B9-4B6C-AA0A-0514C081E8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA155D6-E058-4A10-A931-B05451ABD91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA155D6-E058-4A10-A931-B05451ABD91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA155D6-E058-4A10-A931-B05451ABD91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA155D6-E058-4A10-A931-B05451ABD91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
